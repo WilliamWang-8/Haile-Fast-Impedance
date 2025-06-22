@@ -1,6 +1,6 @@
 # hybdrt Installation Guide
 
-The guide outlines the process to get [hybdrt](https://github.com/jdhuang-csm/hybrid-drt) running on a local computer (following the instructions outlined after reading the current GitHub guide as of May 2025, since the fit requires an earlier version of Python due to outdated function call references is recommended.) Documentation is specifically written for Biologic instruments in the Haile Group in mind.
+The guide outlines the process to get [hybdrt](https://github.com/jdhuang-csm/hybrid-drt) running on a local computer (following the instructions outlined after reading the current GitHub guide as of May 2025 is recommended since the fit requires an earlier version of Python due to outdated function call references is recommended.) Documentation is specifically written for Biologic instruments in the Haile Group in mind.
 
 "Sample Settings Files" provides two working EC lab settings files for hybrid measurement. "test_cell_full_resistance" is the sample settings file for the Biologic test cells with a resistance ~10,000Ω (EIS: 100kHz to 100Hz & CP:0.010mA from 0.01s to 10s in 10x steps). "STM5050_Jinwook_I_0" is the sample settings file for the STM5050 films developed by Jinwook Kim with a resistance ~40,000Ω (EIS: 7E6Hz to 10Hz & CP: 0.075μA from 0.001s to 100s in 10x steps.)
 
