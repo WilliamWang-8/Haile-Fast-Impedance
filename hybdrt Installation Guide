@@ -1,0 +1,22 @@
+hybdrt Installation Notes
+
+Due to the updated function name of "cumtrapz" to "cumulative_trapezoid" (probably for good reason in hindsight) in scipy, we will need to install an earlier 1.10 version of scipy and use a corresponding earlier version of Python i.e, 3.11 via a new python kernel. The alternative is to alter the code base or have the owner update the function references.
+
+Activate the environment:
+conda create -n hybdrt_py311 python=3.11
+conda activate hybdrt_py311
+
+Clone the repositories:
+git clone https://github.com/jdhuang-csm/mittag-leffler.git
+git clone https://github.com/<org>/hybrid-drt.git
+
+Install the repositories: 
+pip install (#insert your own file path for the repository by right clicking the folder)/mittag-leffler
+pip install (#insert your own file path for the repository by right clicking the folder)/hybrid-drt_240425
+
+Create kernel:
+pip install ipykernel
+python -m ipykernel install --user --name hybdrt_py311 --display-name "hybdrt (Python 3.11)"
+
+Select the new kernel in the notebook file run-time (top right in VS Code).
+
