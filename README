@@ -1,4 +1,4 @@
-**hybdrt Installation Guide**
+#hybdrt Installation Guide
 
 The following outlines the process to get hybdrt running on your computer (I recommend following the instructions outlined after reading the current GitHub guide as of May 2025, since the fit requires an earlier version of Python due to outdated function call references.)
 
