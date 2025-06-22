@@ -4,7 +4,7 @@ This outlines the process to get hybdrt running on your computer (I recommend fo
 
 "Sample Settings Files" provides two working EC lab settings files for hybrid measurement. "test_cell_full_resistance" is the sample settings file for the Biologic test cells with a resistance ~10,000Ω (EIS: 100kHz to 100Hz & CP:0.010mA from 0.01s to 10s in 10x steps). "STM5050_Jinwook_I_0" is the sample settings file for the STM5050 films developed by Jinwook Kim with a resistance ~40,000Ω (EIS: 7E6Hz to 10Hz & CP: 0.075μA from 0.001s to 100s in 10x steps.)
 
-Measurement Parameters:
+## Measurement Parameters
 
 Hybrid EIS measurement requires a general understanding of the resistive behavior of the electrochemical cell of interest and a frequency range of interest. 
 
@@ -15,18 +15,18 @@ Hybrid EIS measurement requires a general understanding of the resistive behavio
 5. Convert log scale to frequency, then to seconds (recommend with starting applied current time no shorter than 0.001s and increasing time steps by 10x)
 6. Determine current range using V=IR
 
-Export:
+## Export
 
 The order of headers does not matter
 EIS: TXT export w/time, frequency, real impedance, and imaginary impedance
 CP: TXT export w/time, current, and voltage
 
-Fit:
+## Fit
 
 To accommodate fits with CP measurements made on Biologic instruments, replace the "fileload.py" file with the one in this folder. A sample notebook with fits made with measurements from both settings files is provided. CSV exports are also possible.
 
 
-Notes:
+## Notes:
 
 CP in setting files contains open circuit voltage steps of 1s for the first step and 5s for the last step
 Ensure that for positive currents, "Limits: Ewe>EM" is set to a positive voltage value and a negative value for negative currents
